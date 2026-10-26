@@ -1,5 +1,9 @@
 # Rinda 강연 자막 — 배포본
 
+## 요약
+
+Rinda 강연 자막(rinda-caption)은 발표 화면 위에 마이크로 들은 말을 실시간 번역 자막으로 겹쳐 그리는 데스크톱 앱이다. 이 저장소는 소스 없이 설치파일(Windows `.exe`, macOS Apple Silicon `.app.tar.gz`)과 자동 업데이트 정보(`latest.json`, 서명 `.sig`)만 GitHub Releases 로 배포하는 공개 배포 전용 저장소다. 앱이 인증 없이 업데이트를 확인해야 해서 공개로 둔다. 2026-08 기준 최신 배포는 v0.1.6 이다.
+
 발표 화면 **위에 직접** 실시간 번역 자막을 그리는 데스크톱 앱입니다.
 
 > **이 저장소에는 소스 코드가 없습니다.** 설치파일과 자동 업데이트 정보(`latest.json`)만
@@ -12,7 +16,9 @@
 | 운영체제 | 파일 |
 |---|---|
 | Windows | `..._x64-setup.exe` |
-| macOS (Apple Silicon) | `..._aarch64.dmg` |
+| macOS (Apple Silicon) | `..._aarch64.app.tar.gz` (압축을 풀어 나온 앱을 응용 프로그램 폴더로 옮김) |
+
+`.sig` 파일과 `latest.json` 은 자동 업데이트용이라 내려받지 않아도 됩니다.
 
 ## 설치할 때 나오는 경고
 
